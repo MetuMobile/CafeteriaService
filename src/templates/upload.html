@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MetuMobile Uploader</title>
+</head>
+
+<body>
+
+	<h3>Upload menu in Excel format</h3>
+
+	<form id="upload-form" action="{{ url_for('complete')}}" method="POST" enctype="multipart/form-data">
+		<!--Multiple dosya upload'a izin veriyor-->
+		<input type="file" name="file" multiple>
+		<input type="submit" value="send">
+	</form>
+
+</body>
+</html>
